@@ -1,0 +1,11 @@
+let data;
+let array;
+
+function calldata(data){
+	this.array = data;
+	console.log(data)
+}
+
+function home(){
+	
+}

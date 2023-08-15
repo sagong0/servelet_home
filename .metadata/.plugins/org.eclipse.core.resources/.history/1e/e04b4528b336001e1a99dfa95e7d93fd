@@ -1,0 +1,16 @@
+var data;
+var arrayFromJson;
+
+function aaa(){
+	function win(){
+		if(window.XMLHttpRequest){
+			return new XMLHttpRequest();
+		}
+	}
+	
+	function file(){
+		if(data.redayState == XMLHttpRequest.DONE && data.staus ==200){
+			arrayFromJson = JSON.parse(this.response);
+		}
+	}
+}

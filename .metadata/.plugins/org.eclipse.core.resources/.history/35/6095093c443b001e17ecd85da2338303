@@ -1,0 +1,4 @@
+function calldata(data){
+	console.log(data);
+	this.array = data;
+}

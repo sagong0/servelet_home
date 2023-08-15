@@ -1,0 +1,28 @@
+package practicehome;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class logincontroller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public logincontroller() {
+        super();
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String userid = request.getParameter("userid");
+		String userpw = request.getParameter("userpw");
+		
+//		System.out.println(userid);
+//		System.out.println(userpw);
+		
+		String list[] = {"hong","kim","park","apink"};
+		String passwd[] = {"a1234","b1234","c1234","apink"};
+	}
+
+}

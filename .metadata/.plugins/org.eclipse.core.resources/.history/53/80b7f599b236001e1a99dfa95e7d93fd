@@ -1,0 +1,10 @@
+var data;
+var arrayFromJson;
+
+function aaa(){
+	function win(){
+		if(window.XMLHttpRequest){
+			return new XMLHttpRequest();
+		}
+	}
+}

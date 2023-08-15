@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" value="파일로드" onclick="home()">
+</body>
+
+<script src="./a3.js"></script>
+<script src="http://121.130.239.202:8081/web/userlist.json?callback=calldata&v=1"></script>
+</html>

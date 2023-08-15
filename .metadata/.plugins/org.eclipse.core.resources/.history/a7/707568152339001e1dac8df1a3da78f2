@@ -1,0 +1,30 @@
+package passlossnoform;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class pwcontroller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public pwcontroller() {
+        super();
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
+		
+		
+		// username/userid/useremail
+		String username = request.getParameter("username");
+		String userid = request.getParameter("userid");
+		String useremail = request.getParameter("useremail");
+		
+		System.out.printf("%s %s %s", username,userid,useremail);
+	}
+
+}

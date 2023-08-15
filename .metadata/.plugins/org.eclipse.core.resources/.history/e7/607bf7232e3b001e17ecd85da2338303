@@ -1,0 +1,33 @@
+package array_test;
+
+import java.util.*;
+
+public class deletesoon {
+
+	public static void main(String[] args) {
+		deletesoon ds = new deletesoon();
+		ds.test();
+	}
+
+	public void test() {
+		String member[][] = {
+				{"박초롬","윤보미","정은지","김남주","오하영"},
+				{"31","29","33","31","32"}
+		};
+		int ea = member.length;
+		//System.out.println(ea);
+		int data_ea = member[0].length;
+		//System.out.println(data_ea);
+		
+		/*
+		 * 응용문제 7  : 다음 코드를 활용하여 결과값을 예시처럼 출력 되도록 하시오.
+		 * 박초롱 31 윤보미 29 정은지 33 김남주31 오하영 32
+		 * */
+		
+		for(int i=0; i < data_ea; i++) {		//5
+			for(int j=0; j<ea; j++) {		//2
+				//System.out.println(member[ff][f]);
+			}
+		}
+	}
+}

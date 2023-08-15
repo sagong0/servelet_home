@@ -1,0 +1,22 @@
+package practicehome;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class homecont extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public homecont() {
+        super();
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String num = request.getParameter("no1");
+		System.out.println(num);
+	}
+
+}

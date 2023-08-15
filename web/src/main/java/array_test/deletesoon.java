@@ -1,0 +1,35 @@
+package array_test;
+
+import java.util.*;
+
+public class deletesoon {
+
+	public static void main(String[] args) {
+		deletesoon ds = new deletesoon();
+		ds.test();
+	}
+
+	public void test() {
+		/*
+		 * 응용문제 10.
+		 * 다음 데이터가 있습니다.
+		 * 10,7,6,1,11,37,41,22 입니다.
+		 * 해당 데이터에서 짝수값을 모두 삭제 되도록 하여 배열을 출력 되도록 합니다.
+		 * 결과 [7,1,11,37,41]
+		 * 단, ArrayList 활용!!!!!!
+		 * */
+		Integer ori_data[] = {10,7,6,1,11,37,41,22};
+		ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(ori_data));
+		
+		
+		
+		for(int i =0; i < arr.size(); i++) {
+			if(arr.get(i) % 2 == 0) {
+				arr.remove(i);
+			}
+		}
+		//System.out.println(arr);
+		ArrayList<Integer> resultArr = new ArrayList<Integer>(arr);
+		System.out.println(resultArr);
+	}
+}

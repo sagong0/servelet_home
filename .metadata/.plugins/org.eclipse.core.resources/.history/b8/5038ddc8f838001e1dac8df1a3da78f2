@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>numbertwo Page</title>
+</head>
+<body>
+	<p>사용자 이름 등록</p>
+	1. <input type="text" name="user"> <br/>
+	2. <input type="text" name="user"> <br/>
+	3. <input type="text" name="user"> <br/>
+	4. <input type="text" name="user"> <br/>
+	5. <input type="text" name="user"> <br/>
+	<input type="button" value="전송~" onclick="insert_ck()">
+</body>
+
+<script>
+	function insert_ck(){}
+	
+</script>
+</html>

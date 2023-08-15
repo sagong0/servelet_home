@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page</title>
+</head>
+<body>
+	로그인 : <input type="text" id="mid">
+	패스워드 : <input type="password" id="mpass">
+	 
+	 <input type="button" onclick="play()">
+	 
+	 
+	 <script>
+		 
+		 function play(){}
+		 
+	 </script>
+</body>
+</html>

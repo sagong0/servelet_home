@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기</title>
+    <style>
+        .box { width: 150px; height: 50px; border:1px solid #ccc; }
+    </style>
+</head>
+<!--
+	응용문제3. 아이디 찾기 버튼 클릭시 사용자 이름, 이메일 모두 입력이 되어야만
+	하며 검토하는 스크립트를 작성하시오.
+ -->
+<body>
+[아이디 찾기]
+이름 : <input type="text" id="usernm">
+이메일 : <input type="text" id="useremail">
+<input type="button" value="아이디 찾기" onclick="id_search()">
+<br><br>
+아이디명 : <div class="box" id="box"></div>
+</body>
+	
+	<script>
+		function id_search(){
+			var username = document.getElementById("usernm");
+			var userEmail = document.getElementById("useremail");
+			
+			console.log(username.value);
+			console.log(userEmail.value);
+			
+			if(username.value == ""){
+				alert("사용자 이름을 입력해주세요.");
+			}else if(userEmail.value == ""){
+				alert("이메일을 입력해주세요.");
+			}else{
+				ajax(username.value, userEmail.value);
+			}
+		}
+		
+		function ajax(name, email){
+			var info;
+			var data;
+			
+			var postdata = "username="+name+"&useremail="+email;
+			
+			function wk(){
+				if(window.XMLHttpRequest){
+					return new XMLHttpRequest();
+				}
+			}
+			function idsearch(){
+				if(info.readyState == XMLHttpRequest.DONE && info.status == 200){
+					console.log(this.response);
+					var result = this.response;
+					if(result == "error"){
+						alert("해당 정보를 불러오지 못했습니다.");
+					}else{
+						var html = document.getElementById("box");
+						html.innerHTML ="<p>"+ result +"</p>";
+					}
+				}
+			}
+			
+			info = wk();
+			info.onreadystatechange = idsearch;
+			info.open("POST","./id_search.do",true);
+			info.setRequestHeader("content-type","application/x-www-form-urlencoded")
+			info.send(postdata);
+		}
+		
+	</script>
+	
+</html>

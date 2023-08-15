@@ -1,0 +1,34 @@
+package web;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/lotto")
+public class lotto extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public lotto() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String no1 = String.valueOf(request.getAttribute("no01"));
+		String no2 = String.valueOf(request.getAttribute("no02"));
+		String no3 = String.valueOf(request.getAttribute("no03"));
+		String no4 = String.valueOf(request.getAttribute("no04"));
+		String no5 = String.valueOf(request.getAttribute("no05"));
+		String no6 = String.valueOf(request.getAttribute("no06"));
+		
+		System.out.printf(no1, no2, no3,no4,no5,no6);
+	}
+}

@@ -1,0 +1,29 @@
+package array_test;
+
+import java.util.*;
+
+public class deletesoon {
+
+	public static void main(String[] args) {
+		deletesoon ds = new deletesoon();
+		ds.test();
+	}
+
+	public void test() {
+		/*
+		 * 응용문제6
+		 * 다음 데이터 값 중 아이디가 4글자 이상 아이디만 추출하여
+		 * 새로운 데이터 배열로 출력하시오.
+		 * hong,kim,park,jang,sun,so,han,jung
+		 * */
+		String name[] = {"hong","kim","park","jang","sun","so","han","jung"};
+		ArrayList<String> newArr = new ArrayList<String>();
+		
+		for(String a : name) {
+			if(a.length() >= 4) {
+				newArr.add(a);
+			}
+		}
+		System.out.println(newArr);
+	}
+}

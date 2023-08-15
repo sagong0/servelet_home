@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page</title>
+</head>
+<body>
+	로긍인 : <input type="text">
+	패스워드 : <input type="password">

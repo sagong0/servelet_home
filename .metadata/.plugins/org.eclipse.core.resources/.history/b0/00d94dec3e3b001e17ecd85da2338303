@@ -1,0 +1,12 @@
+package practicehome;
+
+public class homemodel {
+	int sum = 0;
+	
+	public String hometest(String no1, String no2) {
+		
+		this.sum = Integer.valueOf(no1) + Integer.valueOf(no2);
+		
+		return String.valueOf(sum);
+	}
+}

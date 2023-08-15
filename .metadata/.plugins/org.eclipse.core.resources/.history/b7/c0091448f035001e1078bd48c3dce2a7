@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	ID : <input type="text"> <br/><br/>
+	PW : <input type="password"><br/><br/><br/><br/>
+	
+	<input type="button" onclick="getSend()">
+	
+	<script>
+		function getSend(){
+			
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	ID : <input type="text"> <br/><br/>
+	PW : <input type="password">
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+package practicehome;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class searchcontroller
+ */
+@WebServlet("/searchcontroller")
+public class searchcontroller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public searchcontroller() {
+        super();
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
+		
+		String username = request.getParameter("usernm");
+		String userEmail = request.getParameter("useremail");
+		
+		System.out.println(username);
+		System.out.println(userEmail);
+	}
+
+}

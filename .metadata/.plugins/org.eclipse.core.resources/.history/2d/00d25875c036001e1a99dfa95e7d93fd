@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form id="f">
+아이디 : <input type="text" name="mid" id="mid"><br/>
+<input type="button" value="중복확인" onclick="check()">
+</form>
+
+<script src="./a4.js"></script>
+
+</body>
+</html>

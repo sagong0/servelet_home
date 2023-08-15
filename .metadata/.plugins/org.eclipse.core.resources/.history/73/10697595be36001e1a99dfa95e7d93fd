@@ -1,0 +1,11 @@
+package web;
+
+public class testModel {
+	
+	String member = "이철의";
+	
+	public String getMember(String name, String address) {
+		
+		return name + address;
+	}
+}

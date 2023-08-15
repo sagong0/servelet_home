@@ -1,0 +1,18 @@
+package array_test;
+
+public class pract {
+
+	public static void main(String[] args) {
+		
+		class Solution{
+
+			public  int solution(int i, int j, boolean b, boolean c, boolean d, boolean e) {
+				System.out.println("asdfdasf");
+				return 0;
+			}
+		}
+		
+		Solution sl = new Solution();
+		sl.solution(3, 4, true,false,false,true,true)
+	}
+}

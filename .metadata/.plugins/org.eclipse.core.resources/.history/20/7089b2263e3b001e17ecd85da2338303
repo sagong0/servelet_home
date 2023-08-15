@@ -1,0 +1,26 @@
+package c_test;
+
+
+
+
+public class Solution {
+	
+	String answer ="";
+	
+	public String Solution(String my_string, String overwrite_string, int s) {
+		int len01 = overwrite_string.length();
+		int len02 = my_string.length();
+		/*
+		 * He11oWor1d, Program29b8UYP
+		 * s = 2 일 때
+		 * */
+		// answer = He1
+		answer = my_string.substring(0, s);
+		// answer = He1 + lloWorl => He1lloWorl
+		answer += overwrite_string;
+		
+		answer.substring(s + overwrite_string.length(), my_string.length());
+		
+		return answer;
+	}
+}

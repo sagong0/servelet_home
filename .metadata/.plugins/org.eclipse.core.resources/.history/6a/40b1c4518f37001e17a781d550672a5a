@@ -1,0 +1,23 @@
+package array_test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+// 2차 배열을 1차 배열로 합산
+public class array7 {
+
+	public static void main(String[] args) {
+		new array7().test();
+	}
+	
+	public void test() {
+		String member[] = {"이순신","홍길동","유관순","강감찬"};
+		ArrayList<String> ar = new ArrayList<String>();
+		ar.add(member[0]);
+		ar.add(member[1]);
+		ar.add(member[2]);
+		//ar.add(member[3]);
+		
+		System.out.println(Arrays.toString(ar));
+	}
+}

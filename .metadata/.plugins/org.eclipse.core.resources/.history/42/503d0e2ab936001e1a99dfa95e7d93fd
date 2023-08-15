@@ -1,0 +1,22 @@
+let data;
+let array;
+
+function calldata(data){
+	console.log(data)
+	this.array = data;
+}
+
+function home(){
+	this.array["member_list"].sort(function(a,b){
+		
+		return b["point"]-a["point"];
+	});
+	console.log(this.array);
+	
+	let html = document.getElementById("boxbox")
+	
+	for(a in this.array["member_list"]){
+		console.log(a["name"]);
+	}
+	
+}

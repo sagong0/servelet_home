@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page</title>
+</head>
+<body>
+	로그인 : <input type="text" id="mid" name="idid"><br/>
+	패스워드 : <input type="password" id="mpass" name="pwpw">
+	 
+	 <input type="button" onclick="play()">
+	 
+	 
+	 <script>
+		 
+		 function play(){
+			 var id = document.getElementById("mid");
+			 var pw = document.getElementById("mpass");
+			 
+			 location.href="./testok.do"
+			 
+		 }
+		 
+	 </script>
+</body>
+</html>

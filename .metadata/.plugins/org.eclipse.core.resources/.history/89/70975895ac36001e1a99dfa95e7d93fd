@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" value="배열1">
+	<input type="button" value="배열2">
+	<input type="button" value="배열3">
+	<input type="button" value="배열4">
+</body>
+</html>

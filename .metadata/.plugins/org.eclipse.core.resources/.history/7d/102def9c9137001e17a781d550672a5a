@@ -1,0 +1,30 @@
+package array_test;
+
+import java.util.*;
+
+public class array_home {
+
+	public static void main(String[] args) {
+		new array_home().test();
+	}
+	
+	
+	public void test() {
+		/*
+		 * 응용문제 10.
+		 * 다음 데이터가 있습니다.
+		 * 10,7,6,1,11,37,41,22 입니다.
+		 * 해당 데이터에서 짝수값을 모두 삭제 되도록 하여 배열을 출력 되도록 합니다.
+		 * 결과 [7,1,11,37,41]
+		 * 단, ArrayList 활용!!!!!!
+		 * */
+		
+		Integer num[] = {10,7,6,1,11,37,41,22};
+		
+		
+		ArrayList<Integer> ar = new ArrayList<Integer>(Arrays.asList(num));
+		ArrayList<Integer> newAr = new ArrayList<Integer>();
+		
+		while
+	}
+}

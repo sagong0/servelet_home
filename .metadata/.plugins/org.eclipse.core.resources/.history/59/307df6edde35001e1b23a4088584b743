@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>number</title>
+</head>
+<body>
+	<form id="f" method="post" action="">
+		number1 : <input type="text" name="no1"><br/>
+		number2 : <input type="text" name="no2"><br/>
+		number3 : <input type="text" name="no3"><br/>
+		number4 : <input type="text" name="no4"><br/>
+		number5 : <input type="text" name="no5"><br/>
+		number6 : <input type="text" name="no6"><br/>
+		<input type="button" value="전송">
+	</form>
+</body>
+</html>

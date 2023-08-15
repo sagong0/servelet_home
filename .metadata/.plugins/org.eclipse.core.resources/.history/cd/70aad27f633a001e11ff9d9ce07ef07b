@@ -1,0 +1,15 @@
+package c_test;
+
+public class Solution {
+	
+	String answer ="";
+	
+	public String Solution(String my_string, String overwrite_string, int s) {
+		int len01 = overwrite_string.length();
+		int len02 = my_string.length();
+		
+		answer = my_string.substring(0, s);
+		
+		return answer;
+	}
+}

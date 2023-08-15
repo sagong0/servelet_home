@@ -1,0 +1,63 @@
+package practicehome;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class searchcontroller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public searchcontroller() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
+		
+		String username = request.getParameter("username").intern();
+		String useremail = request.getParameter("useremail").intern();
+		/*
+		 * 응용문제5.
+		 * 아이디 찾기 기능을 완성해야 합니다. 배열 데이터값을 확인하여 이름과 이메일이 동일한 정보
+		 * 일 경우 결과값을 출력하며, 만약 이름과 이메일 정보 중 틀릴 경우 error 라는 메세지를 콘솔로
+		 * 출력합니다.
+		 * */
+		String members[][] = {
+				{"장진호","배유미","염무원","김승균","김경민","장진호","김경민"},
+				{"jang_ho@nate.com","bae_mi@nate.com","number1@gmail.com","kim@nate.com",
+					"min@nate.com","ho@naver.com","k_min@gmail.com"},
+				{"jang_ho","bae_mi","number1","kim","min","ho","k_min"}
+		};
+		
+		String msg = "";
+		int w = 0;
+		int count = 0;
+		while(w < members[0].length){
+			if(username == members[0][w]) {			// name 체크
+				if(useremail == members[1][w]) {	// email 체크
+					count = 1;
+					msg = members[2][w];
+					break;
+				}
+			}
+			w++;
+		}
+		
+		if(count ==0) {
+			msg = "error";
+		}
+		System.out.println(msg);
+		PrintWriter pw = response.getWriter();
+		pw.write(msg);
+	}
+
+}

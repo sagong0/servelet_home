@@ -1,0 +1,33 @@
+package array_test;
+
+import java.util.*;
+
+public class deletesoon {
+
+	public static void main(String[] args) {
+		deletesoon ds = new deletesoon();
+		ds.test();
+	}
+
+	public void test() {
+		/*
+		 * 숙제 : 해당 두개의 배열 데이터가 있습니다. 각 배열별로 인덱스가 같은 번호를
+		 * 더하여 짝수, 홀수 인지를 배열 결과 데이터로 재설정하여 출력하시오.
+		 * Adata = 5 17 19 22 23
+		 * Bdata = 1 2 3 4 5
+		 * 결과 예시) :
+		 * 			["짝수","홀수","짝수","짝수","짝수"]
+		 * */
+		int data [][] = {
+				{5, 17, 19, 22, 23},
+				{1, 2, 3, 4, 5}
+		};
+		/*  data[0][0] + data[1][0] 
+		 *  data[0][1] + data[1][1] 
+		 *  data[0][2] + data[1][2]
+		 *  data[0][3] + data[1][3]
+		 *  */
+		
+		
+	}
+}

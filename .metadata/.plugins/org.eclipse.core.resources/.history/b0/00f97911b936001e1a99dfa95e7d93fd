@@ -1,0 +1,18 @@
+let data;
+let array;
+
+function calldata(data){
+	console.log(data)
+	this.array = data;
+}
+
+function home(){
+	this.array["member_list"].sort(function(a,b){
+		
+		return b["point"]-a["point"];
+	});
+	console.log(this.array);
+	
+	let html = document.getElementById("boxbox")
+	html.innerHTML +=
+}

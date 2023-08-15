@@ -1,0 +1,7 @@
+function aaa(){
+	if(f.mid.value==""){
+		alert("사용자 아이디를 입력해주세요.")
+	}else{
+		ajaxfun(f.mid.value);
+	}
+}

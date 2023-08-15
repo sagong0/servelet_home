@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form id="ff" method="post" action="./logintestok.do">
+	ID : <input type="text" id="mid" name="testid"> <br/><br/>
+	PW : <input type="password" id="mpw" name="testpw"><br/><br/><br/><br/>
+	
+	<input type="button" value="LOGIN" onclick="getSend()">
+</form>
+	
+	<script>
+		function getSend(){
+			ff.submit();
+		}
+	</script>
+
+</body>
+</html>

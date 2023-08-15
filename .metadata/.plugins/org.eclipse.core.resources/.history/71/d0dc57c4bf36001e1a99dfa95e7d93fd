@@ -1,0 +1,38 @@
+function check(){
+	if(f.mid.value==""){
+		alert("사용자 아이디를 입력해주세요.")
+	}else{
+		ajaxfunc(f.mid.value);
+	}
+}
+
+let request;
+let arrayFromJson;
+
+function ajaxfunc(idData){
+	var ajax_data = "mid="+idData;
+	//console.log(ajax_data);
+	
+	function aaa(){
+		if(window.XMLHttpRequest){
+			return new XMLHttpRequest();
+		}
+	}
+	
+	function bbb(){
+		if(request.readyState == XMLHttpRequest.DONE && request.status ==200){
+			arrayFromJson = this.response;
+			console.log(arrayFromJson);
+			
+		}
+	}
+	request = aaa();
+	request.onreadystatechange = bbb;
+	request.open("POST","http://121.130.239.202:8081/web/login_idck.jsp", true);
+	request.setRequestHeader("content-type","application/x-www-form-urlencoded")
+}
+
+
+function return_cehck(resp){
+	if(resp == "no"){}
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form id="f">0
+아이디 : <input type="text" name="mid" id="mid"><br/>
+<input type="button" value="중복확인">
+</form>
+</body>
+</html>

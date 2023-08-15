@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기</title>
+    <style>
+        .box { width: 150px; height: 50px; border:1px solid #ccc; }
+    </style>
+</head>
+<!--
+	응용문제3. 아이디 찾기 버튼 클릭시 사용자 이름, 이메일 모두 입력이 되어야만
+	하며 검토하는 스크립트를 작성하시오.
+ -->
+<body>
+[아이디 찾기]
+이름 : <input type="text" id="usernm">
+이메일 : <input type="text" id="useremail">
+<input type="button" value="아이디 찾기" onclick="info_ck()">
+<br><br>
+아이디명 : <div class="box" id="box"></div>
+</body>
+<script>
+	function info_ck(){
+		var id = document.getElementById("userid");
+		var pw = document.getElementById("userpw");
+		console.log(id.value);
+		console.log(pw.value);
+		
+		if(id.value == "" && pw.value == ""){
+			alert("아이디와 비밀번호를 입력하세요;");
+		}else if(id.value == "" && pw.value != ""){
+			alert("아이디를 입력해주세요");
+		}else if(id.value != "" && pw.value == ""){
+			alert("비밀번호를 입력해주세요");
+		}else{
+			ajax(id.value,pw.value);
+		}
+	}
+	
+	function ajax(usernw, userpw){
+		var info;
+		var data;
+		// backend 에게 전달할 data
+		var postdata = "usernm=" + usernw + "&useremail=" +  userpw;
+		
+		function wk(){
+			if(window.XMLHttpRequest){
+				return new XMLHttpRequest();
+			}
+			
+			function idsearch(){
+				if(info.XMLHttpRequest == XMLHttpRequest.DONE && info.status == 200){
+					var reulst = this.response;
+					
+					if(result == "error"){
+						alert("해당되는 정보가없습니다.")
+					}else{
+						var html = document.getElementById("box");
+						html.innerHTML = "<p>"+ result +"</p>";
+					}
+				}
+			}
+			
+			info = wk();
+			info.onreadystatechange = idsearch;
+			info.open("POST", "./idsearch.do", true);
+			info.setRequestHeader("content-type","application/x-www-form-urlencoded", true);
+			info.send(postdata);
+		}
+	}
+	
+</script>
+</html>
