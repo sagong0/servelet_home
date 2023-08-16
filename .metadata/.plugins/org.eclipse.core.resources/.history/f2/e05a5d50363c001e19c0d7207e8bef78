@@ -1,0 +1,47 @@
+package io_home;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+/*
+ * 응용문제 2)
+ * number.txt에 숫자가 있습니다. 해당 파일을 읽어 들여서 해당 숫자 중
+ * 짝수 값만 모두 출력되도록 하시오.
+ * */
+
+public class home_io8 {
+
+	public static void main(String[] args) {
+		data8 a = new data8();
+		try {
+			a.abc();
+		} catch (Exception e) {
+			System.out.println("err  발생");
+			System.out.println(e);
+		}
+	}
+
+}
+
+class data8 {
+	FileReader fr = null;
+	BufferedReader br = null;
+	
+	public void abc() throws Exception {
+		this.fr = new FileReader("D:\\project\\practicehome\\src\\main\\webapp\\number.txt");
+		this.br = new BufferedReader(this.fr);
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		
+		String result = "";
+		
+		while((result = this.br.readLine()) != null) {
+			System.out.println(this.br.readLine());
+				if(Integer.parseInt(result) % 2 == 0) {
+					arr.add(result);					
+			}
+		}
+		System.out.println(arr);
+	}
+}

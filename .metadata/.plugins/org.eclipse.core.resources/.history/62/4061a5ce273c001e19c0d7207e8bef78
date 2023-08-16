@@ -1,0 +1,25 @@
+package io_home;
+
+import java.io.FileReader;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		data2 dd = new data2();
+		String url = "D:\\project\\practicehome\\src\\main\\webapp\\data.txt";
+		dd.abc(url);
+	}
+
+}
+
+class data2{
+	FileReader rf = null;
+	
+	public void abc(String url) {
+		try {
+			data =
+		}catch(Exception e) {
+			
+		}
+	};
+}

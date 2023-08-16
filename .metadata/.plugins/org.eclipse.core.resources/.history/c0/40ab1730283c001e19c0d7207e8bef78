@@ -1,0 +1,30 @@
+package io_home;
+
+import java.io.FileReader;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		data3 dd = new data3();
+		String url = "D:\\project\\practicehome\\src\\main\\webapp\\data.txt";
+		try {
+			dd.abc(url);
+		} catch (Exception e) {
+			System.out.println(e);
+			System.exit(0);
+		}
+	}
+
+}
+
+class data3{
+	FileReader rf = null;
+	
+	public void abc(String url) throws Exception{
+		try {
+			this.rf = new FileReader(url);
+		}catch(Exception e) {
+			
+		}
+	};
+}

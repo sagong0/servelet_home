@@ -1,0 +1,30 @@
+package io_home;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Arrays;
+
+public class home_io9 {
+
+	public static void main(String[] args) {
+		try {
+			//InputStream si = System.in;
+			//int ascCode = si.read();
+			//System.out.println(ascCode);;
+			
+			String a = "123456789";
+			//String a ="홍길동";
+			byte b[] = a.getBytes();
+			System.out.println(Arrays.toString(b));
+			
+			OutputStream os = System.out;
+			os.write(b,0, 5);
+			os.flush();
+			os.close();
+			
+		}catch(Exception e) {
+			System.out.println("err");
+		}
+	}
+
+}

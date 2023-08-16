@@ -1,0 +1,21 @@
+package io_home;
+
+public class home_io1 {
+
+	public static void main(String[] args) {
+		abc a = new abc();
+		try{
+			a.aa();
+		}catch(Exception e) {
+			
+		}
+	}
+
+}
+
+class abc{
+	/**/
+	public void aa() throws Exception {
+		
+	}
+}

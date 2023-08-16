@@ -1,0 +1,17 @@
+package io_home;
+
+// 파일 쓰기
+public class home_io4 {
+
+	public static void main(String[] args) {
+		home_data4 a = new home_data4();
+		a.abc();
+	}
+}
+
+
+class home_data4{
+	public void abc() throws Exception {
+		
+	}
+}

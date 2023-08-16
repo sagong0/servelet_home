@@ -1,0 +1,25 @@
+package io_home;
+
+import java.io.PrintWriter;
+
+public class home_io7 {
+
+	public static void main(String[] args) {
+		data7 a = new data7();
+		try {
+			a.abc();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
+
+class data7{
+	
+	PrintWriter pw = null;
+	
+	public void abc() throws Exception{
+		
+	}
+}

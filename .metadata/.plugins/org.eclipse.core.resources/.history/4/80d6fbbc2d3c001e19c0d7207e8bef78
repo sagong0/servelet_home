@@ -1,0 +1,36 @@
+package io_home;
+
+import java.io.FileWriter;
+
+// 파일 쓰기
+public class home_io4 {
+
+	public static void main(String[] args) {
+		home_data4 a = new home_data4();
+		try {
+			a.abc();
+		} catch (Exception e) {
+			System.out.println("error");
+			System.out.println(e);
+		}
+	}
+}
+
+
+class home_data4{
+	
+	FileWriter wr = null;
+	
+	public void abc() throws Exception {
+		
+		String user[] = {"홍장군", "룰루장군", "어흥", "까꿍"};
+		String usertwo[] = {"홍장군2", "룰루장군2", "어흥2", "까꿍2"};
+		
+		this.wr = new FileWriter("D:\\project\\practicehome\\src\\main\\webapp\\data.txt",true);
+		
+		for(String name : user) {
+			this.wr.write(name + "\n");			
+		}
+		this.wr.close();
+	}
+}

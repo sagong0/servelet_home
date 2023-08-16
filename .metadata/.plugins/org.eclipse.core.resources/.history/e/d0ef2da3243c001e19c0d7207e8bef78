@@ -1,0 +1,20 @@
+package io_home;
+
+import java.io.FileReader;
+
+public class home_io2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+class data2{
+	
+	public void aaa() throws Exception {
+		FileReader fr = new FileReader("D:\\project\\practicehome\\src\\main\\webapp\\data.txt");
+	}
+}

@@ -1,0 +1,28 @@
+package io_home;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class home_io7 {
+
+	public static void main(String[] args) {
+		data7 a = new data7();
+		try {
+			a.abc();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
+
+class data7{
+	
+	FileReader fr = null;
+	
+	public void abc() throws Exception{
+		this.fr = new FileReader("D:\\project\\practicehome\\src\\main\\webapp\\number.txt");
+		BufferedReader br = new BufferedReader(this.fr);
+		
+	}
+}

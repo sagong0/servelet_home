@@ -1,0 +1,19 @@
+package io_home;
+
+import java.io.InputStream;
+
+public class home_io9 {
+
+	public static void main(String[] args) {
+		try {
+			InputStream si = System.in;
+			int ascCode = si.read();
+			
+			System.out.println(ascCode);;
+			
+		}catch(Exception e) {
+			System.out.println("err");
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package io_home;
+
+import java.io.OutputStream;
+
+public class home_io10 {
+
+	public static void main(String[] args) {
+		new data10().abc();
+	}
+}
+
+class data10{
+	
+	public void abc() {
+		String data = "abcde";
+		int ascCode = data.getBytes(data);
+		
+		OutputStream os = System.out;
+		os.write(ascCode);
+	}
+}

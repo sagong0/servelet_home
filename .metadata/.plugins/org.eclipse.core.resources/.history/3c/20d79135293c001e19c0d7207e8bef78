@@ -1,0 +1,16 @@
+package io_home;
+
+import java.io.FileWriter;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		data3 a = new data3();
+	}
+
+}
+
+class data3 {
+	FileWriter fw = null;
+	
+}

@@ -1,0 +1,30 @@
+package io_home;
+
+import java.io.FileWriter;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		data3 a = new data3();
+		try {
+			a.abc();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+class data3 {
+	FileWriter fw = null;
+	
+	public void abc() throws Exception{		
+		String user[] = {"홍길동3","유관순3","이순신3", "강감찬3","안중근3"};
+		
+		this.fw = new FileWriter("D:\\project\\practicehome\\src\\main\\webapp\\data.txt");
+		
+		for(String name : user) {
+			this.fw.write(name);
+		}
+		this.fw.close();
+	}
+}

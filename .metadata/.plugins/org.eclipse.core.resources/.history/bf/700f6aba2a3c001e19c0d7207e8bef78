@@ -1,0 +1,22 @@
+package io_home;
+
+import java.io.PrintWriter;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		try {
+			new data3().abc();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+class data3 {
+	PrintWriter pw = null;
+	
+	public void abc() throws Exception{		
+		this.pw = new PrintWriter();
+	}
+}

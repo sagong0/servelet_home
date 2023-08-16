@@ -1,0 +1,37 @@
+package io_home;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class home_io3 {
+
+	public static void main(String[] args) {
+		try {
+			new data3().abc();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+class data3 {
+	FileReader fr = null;
+	
+	public void abc() throws Exception{		
+		this.fr = new FileReader("D:\\project\\practicehome\\src\\main\\webapp\\data.txt");
+		
+		for(;;) {
+			int m = fr.read();
+			
+			System.out.println((char) m);
+			
+			if(m == -1) {
+				break;
+			}
+		}
+		
+		
+		this.fr.close();
+		
+	}
+}
